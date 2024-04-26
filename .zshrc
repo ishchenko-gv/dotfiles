@@ -81,6 +81,7 @@ plugins=(
   git
   zsh-autosuggestions
   zsh-syntax-highlighting
+  fzf-zsh-plugin
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -113,3 +114,9 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+alias ls="eza --icons --git --oneline --all"
+alias lsl="eza --icons --git --oneline --all --long"
+alias lst="eza --icons --git --git-ignore --oneline --all --tree --level=1"
