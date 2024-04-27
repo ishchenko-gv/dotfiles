@@ -82,6 +82,8 @@ plugins=(
   zsh-autosuggestions
   zsh-syntax-highlighting
   fzf-zsh-plugin
+  you-should-use
+  zsh-bat
 )
 
 source $ZSH/oh-my-zsh.sh
