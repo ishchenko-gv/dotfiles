@@ -79,7 +79,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  vi-mode
+  zsh-vi-mode
   zsh-autosuggestions
   zsh-syntax-highlighting
   fzf-zsh-plugin
@@ -125,3 +125,4 @@ source $ZSH/oh-my-zsh.sh
 alias ls="eza --icons --git --oneline --all"
 alias lsl="eza --icons --git --oneline --all --long"
 alias lst="eza --icons --git --git-ignore --oneline --all --tree --level=1"
+
