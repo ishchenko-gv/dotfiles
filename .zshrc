@@ -84,6 +84,8 @@ plugins=(
   fzf-zsh-plugin
   you-should-use
   zsh-bat
+  docker
+  docker-compose
 )
 
 source $ZSH/oh-my-zsh.sh
