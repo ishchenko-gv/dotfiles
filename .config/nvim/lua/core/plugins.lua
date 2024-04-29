@@ -40,6 +40,7 @@ return require('packer').startup(function(use)
   use 'rafamadriz/friendly-snippets'
   use 'christoomey/vim-tmux-navigator'
   use 'alvan/vim-closetag'
+  use 'lewis6991/gitsigns.nvim'
   -- My plugins here
   -- use 'foo1/bar1.nvim'
   -- use 'foo2/bar2.nvim'
