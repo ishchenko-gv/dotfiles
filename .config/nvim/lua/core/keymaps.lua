@@ -1,3 +1,5 @@
+local default_opts = { noremap = true, silent = true }
+
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
@@ -12,3 +14,7 @@ vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.shiftround = true
 vim.opt.expandtab = true
+
+vim.keymap.set("n", "<S-h>", ":bprev<CR>")
+vim.keymap.set("n", "<S-l>", ":bnext<CR>")
+
