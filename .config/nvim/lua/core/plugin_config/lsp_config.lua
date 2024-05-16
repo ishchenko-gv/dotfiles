@@ -25,50 +25,64 @@ local on_attach = function(_, _)
 end
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
+local lspconfig = require('lspconfig')
 
-require('lspconfig').lua_ls.setup {
+lspconfig.lua_ls.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }
 
-require('lspconfig').quick_lint_js.setup {
+lspconfig.quick_lint_js.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }
 
-require('lspconfig').tsserver.setup {
+lspconfig.tsserver.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }
 
-require('lspconfig').stylelint_lsp.setup {
+lspconfig.stylelint_lsp.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }
 
-require('lspconfig').pyright.setup {
+lspconfig.pyright.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }
 
-require('lspconfig').sqlls.setup {
+lspconfig.sqlls.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }
 
-require('lspconfig').marksman.setup {
+lspconfig.marksman.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }
 
-require('lspconfig').yamlls.setup {
+lspconfig.yamlls.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }
 
-require('lspconfig').taplo.setup {
+lspconfig.taplo.setup {
   on_attach = on_attach,
   capabilities = capabilities
 }
 
+lspconfig.html.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = { 'html', 'htmldjango', 'ejs', 'javascript', 'typescript' },
+}
 
+lspconfig.tailwindcss.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = { 'html', 'htmldjango', 'ejs', 'javascript', 'typescript' },
+  settings = {
+    classAttributes = { "class", "className", "class:list", "classList", "ngClass" }
+  }
+}
