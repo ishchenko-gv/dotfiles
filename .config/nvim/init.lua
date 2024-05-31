@@ -2,6 +2,8 @@ require('core.keymaps')
 require('core.plugins')
 require('core.plugin_config')
 
+vim.cmd("language en_US")
+
 vim.wo.number = true
 vim.wo.relativenumber = true
 

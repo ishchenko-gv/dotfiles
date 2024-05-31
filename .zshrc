@@ -129,3 +129,5 @@ alias lst="eza --icons --git --git-ignore --oneline --all --tree --level=1"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export BAT_THEME="TwoDark"
+
+source ~/.github_tokens
