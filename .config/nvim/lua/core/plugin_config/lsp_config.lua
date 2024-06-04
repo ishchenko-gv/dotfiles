@@ -86,3 +86,8 @@ lspconfig.tailwindcss.setup {
     classAttributes = { "class", "className", "class:list", "classList", "ngClass" }
   }
 }
+
+lspconfig.gopls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities
+}
