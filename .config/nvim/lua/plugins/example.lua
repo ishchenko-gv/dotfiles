@@ -5,6 +5,9 @@
 -- change accent color of colorscheme
 vim.api.nvim_set_var('accent_colour', 'cyan')
 
+-- disavle snacks animation
+vim.g.snacks_animate = false
+
 -- every spec file under the "plugins" directory will be loaded automatically by lazy.nvim
 --
 -- In your plugin files, you can:
