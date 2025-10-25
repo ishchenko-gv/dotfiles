@@ -4,5 +4,6 @@
 !.gitignore
 !.zshrc
 !.config
+!.config/**/*
 !.tmux.conf
 !.setup-work-environment.sh

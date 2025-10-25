@@ -1,0 +1,6 @@
+Platform: MacOS
+App version: 3.9.1
+OS version: Unix 22.4.0.0
+OS description: Unix 22.4.0.0
+2024-03-16 00:12:35.597 +00:00 [DBG] System did wake. Connection state: Disconnected
+2024-03-16 00:12:42.017 +00:00 [DBG] System will sleep. Connection state: Disconnected

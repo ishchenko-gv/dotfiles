@@ -1,0 +1,137 @@
+Platform: MacOS
+App version: 3.9.1
+OS version: Unix 22.4.0.0
+OS description: Unix 22.4.0.0
+2024-04-04 10:36:32.662 +01:00 [DBG] System did wake. Connection state: Disconnected
+2024-04-04 10:42:25.683 +01:00 [DBG] Sending Metrics batches
+2024-04-04 10:42:25.725 +01:00 [DBG] Checking if table MetricsTable is empty
+2024-04-04 10:42:25.729 +01:00 [DBG] is empty: True
+2024-04-04 10:42:25.730 +01:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2024-04-04 10:42:25.730 +01:00 [DBG] Sending Analytics Batches
+2024-04-04 10:42:25.733 +01:00 [DBG] Checking if table AnalyticsTable is empty
+2024-04-04 10:42:25.733 +01:00 [DBG] is empty: True
+2024-04-04 10:42:25.734 +01:00 [DBG] Finished sending batches of analytics to pinpoint.
+2024-04-04 11:42:25.758 +01:00 [DBG] Sending Metrics batches
+2024-04-04 11:42:25.772 +01:00 [DBG] Checking if table MetricsTable is empty
+2024-04-04 11:42:25.773 +01:00 [DBG] is empty: True
+2024-04-04 11:42:25.774 +01:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2024-04-04 11:42:25.774 +01:00 [DBG] Sending Analytics Batches
+2024-04-04 11:42:25.777 +01:00 [DBG] Checking if table AnalyticsTable is empty
+2024-04-04 11:42:25.778 +01:00 [DBG] is empty: True
+2024-04-04 11:42:25.778 +01:00 [DBG] Finished sending batches of analytics to pinpoint.
+2024-04-04 12:42:25.739 +01:00 [DBG] Sending Metrics batches
+2024-04-04 12:42:25.763 +01:00 [DBG] Checking if table MetricsTable is empty
+2024-04-04 12:42:25.765 +01:00 [DBG] is empty: True
+2024-04-04 12:42:25.765 +01:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2024-04-04 12:42:25.765 +01:00 [DBG] Sending Analytics Batches
+2024-04-04 12:42:25.774 +01:00 [DBG] Checking if table AnalyticsTable is empty
+2024-04-04 12:42:25.781 +01:00 [DBG] is empty: True
+2024-04-04 12:42:25.781 +01:00 [DBG] Finished sending batches of analytics to pinpoint.
+2024-04-04 13:42:25.779 +01:00 [DBG] Sending Metrics batches
+2024-04-04 13:42:25.799 +01:00 [DBG] Checking if table MetricsTable is empty
+2024-04-04 13:42:25.800 +01:00 [DBG] is empty: True
+2024-04-04 13:42:25.801 +01:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2024-04-04 13:42:25.801 +01:00 [DBG] Sending Analytics Batches
+2024-04-04 13:42:25.802 +01:00 [DBG] Checking if table AnalyticsTable is empty
+2024-04-04 13:42:25.803 +01:00 [DBG] is empty: True
+2024-04-04 13:42:25.803 +01:00 [DBG] Finished sending batches of analytics to pinpoint.
+2024-04-04 14:42:25.842 +01:00 [DBG] Sending Metrics batches
+2024-04-04 14:42:25.868 +01:00 [DBG] Checking if table MetricsTable is empty
+2024-04-04 14:42:25.869 +01:00 [DBG] is empty: True
+2024-04-04 14:42:25.870 +01:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2024-04-04 14:42:25.870 +01:00 [DBG] Sending Analytics Batches
+2024-04-04 14:42:25.875 +01:00 [DBG] Checking if table AnalyticsTable is empty
+2024-04-04 14:42:25.877 +01:00 [DBG] is empty: True
+2024-04-04 14:42:25.877 +01:00 [DBG] Finished sending batches of analytics to pinpoint.
+2024-04-04 15:42:25.874 +01:00 [DBG] Sending Metrics batches
+2024-04-04 15:42:25.908 +01:00 [DBG] Checking if table MetricsTable is empty
+2024-04-04 15:42:25.910 +01:00 [DBG] is empty: True
+2024-04-04 15:42:25.910 +01:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2024-04-04 15:42:25.914 +01:00 [DBG] Sending Analytics Batches
+2024-04-04 15:42:25.917 +01:00 [DBG] Checking if table AnalyticsTable is empty
+2024-04-04 15:42:25.922 +01:00 [DBG] is empty: True
+2024-04-04 15:42:25.922 +01:00 [DBG] Finished sending batches of analytics to pinpoint.
+2024-04-04 16:42:25.977 +01:00 [DBG] Sending Metrics batches
+2024-04-04 16:42:25.992 +01:00 [DBG] Checking if table MetricsTable is empty
+2024-04-04 16:42:25.993 +01:00 [DBG] is empty: True
+2024-04-04 16:42:25.993 +01:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2024-04-04 16:42:25.993 +01:00 [DBG] Sending Analytics Batches
+2024-04-04 16:42:25.995 +01:00 [DBG] Checking if table AnalyticsTable is empty
+2024-04-04 16:42:25.996 +01:00 [DBG] is empty: True
+2024-04-04 16:42:25.996 +01:00 [DBG] Finished sending batches of analytics to pinpoint.
+2024-04-04 17:42:25.912 +01:00 [DBG] Sending Metrics batches
+2024-04-04 17:42:25.924 +01:00 [DBG] Checking if table MetricsTable is empty
+2024-04-04 17:42:25.925 +01:00 [DBG] is empty: True
+2024-04-04 17:42:25.925 +01:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2024-04-04 17:42:25.926 +01:00 [DBG] Sending Analytics Batches
+2024-04-04 17:42:25.928 +01:00 [DBG] Checking if table AnalyticsTable is empty
+2024-04-04 17:42:25.928 +01:00 [DBG] is empty: True
+2024-04-04 17:42:25.928 +01:00 [DBG] Finished sending batches of analytics to pinpoint.
+2024-04-04 17:55:17.936 +01:00 [DBG] AcvcHelperOutLog doesn't exist. Skipping
+2024-04-04 17:55:17.941 +01:00 [DBG] AcvcHelperErrLog doesn't exist. Skipping
+2024-04-04 17:55:17.977 +01:00 [DBG] Total logs size (MB): {0}19
+2024-04-04 17:55:18.027 +01:00 [DBG] Inserted event LOG_DISK_USAGE 19 to MetricsTable
+2024-04-04 17:55:18.036 +01:00 [DBG] Inserted event LOG_DISK_USAGE_INFO 19 to AnalyticsTable
+2024-04-04 18:42:26.014 +01:00 [DBG] Sending Metrics batches
+2024-04-04 18:42:26.052 +01:00 [DBG] Checking if table MetricsTable is empty
+2024-04-04 18:42:26.053 +01:00 [DBG] is empty: False
+2024-04-04 18:42:26.070 +01:00 [DBG] Metrics event batch successfully created, sending metrics
+2024-04-04 18:42:26.071 +01:00 [DBG] metrics region already exists in app: eu-central-1
+2024-04-04 18:42:26.072 +01:00 [DBG] Sending metrics batch async
+2024-04-04 18:42:26.072 +01:00 [DBG] OS: MacOS
+2024-04-04 18:42:26.073 +01:00 [DBG] Metrics data request created
+2024-04-04 18:42:26.140 +01:00 [DBG] Sending Analytics Batches
+2024-04-04 18:42:26.151 +01:00 [DBG] Checking if table AnalyticsTable is empty
+2024-04-04 18:42:26.156 +01:00 [DBG] is empty: False
+2024-04-04 18:42:26.161 +01:00 [DBG] Analytics event batch successfully created, sending analytics
+2024-04-04 18:42:26.162 +01:00 [DBG] Sending analytics batch async
+2024-04-04 18:42:26.162 +01:00 [DBG] metrics region already exists in app: eu-central-1
+2024-04-04 18:42:26.163 +01:00 [DBG] Pinpoint endpoint ID already exists
+2024-04-04 18:42:26.163 +01:00 [DBG] OSVersion: Unix 22.4.0.0
+2024-04-04 18:42:26.163 +01:00 [DBG] OS: MacOS
+2024-04-04 18:42:26.163 +01:00 [DBG] Endpoint ID: eu-central-1:0db0e430-13d5-c2e9-a39c-ec0919c6134e
+2024-04-04 18:42:26.163 +01:00 [DBG] Pinpoint endpoint id: eu-central-1:0db0e430-13d5-c2e9-a39c-ec0919c6134e
+2024-04-04 18:42:26.163 +01:00 [DBG] metrics region already exists in app: eu-central-1
+2024-04-04 18:42:26.170 +01:00 [DBG] OS: MacOS
+2024-04-04 18:42:26.175 +01:00 [DBG] metrics region already exists in app: eu-central-1
+2024-04-04 18:42:26.746 +01:00 [DBG] Caching credentials.
+2024-04-04 18:42:27.164 +01:00 [DBG] 4/4/2024 6:42:27 PM Accepted
+2024-04-04 18:42:27.165 +01:00 [DBG] successfully put analytics to pinpoint
+2024-04-04 18:42:27.165 +01:00 [DBG] Events batch was accepted. Checking individual events for accepted status.
+2024-04-04 18:42:27.170 +01:00 [DBG] CloudWatch response received
+2024-04-04 18:42:27.171 +01:00 [DBG] CloudWatch response status code: OK
+2024-04-04 18:42:27.172 +01:00 [DBG] successfully put metrics to cloudwatch
+2024-04-04 18:42:27.172 +01:00 [DBG] Deleting successfully sent batch of metric events
+2024-04-04 18:42:27.188 +01:00 [DBG] Checking if table AnalyticsTable is empty
+2024-04-04 18:42:27.189 +01:00 [DBG] is empty: True
+2024-04-04 18:42:27.189 +01:00 [DBG] Finished sending batches of analytics to pinpoint.
+2024-04-04 18:42:27.332 +01:00 [DBG] Checking if table MetricsTable is empty
+2024-04-04 18:42:27.333 +01:00 [DBG] is empty: True
+2024-04-04 18:42:27.333 +01:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2024-04-04 19:42:26.163 +01:00 [DBG] Sending Metrics batches
+2024-04-04 19:42:26.191 +01:00 [DBG] Checking if table MetricsTable is empty
+2024-04-04 19:42:26.193 +01:00 [DBG] is empty: True
+2024-04-04 19:42:26.196 +01:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2024-04-04 19:42:26.196 +01:00 [DBG] Sending Analytics Batches
+2024-04-04 19:42:26.198 +01:00 [DBG] Checking if table AnalyticsTable is empty
+2024-04-04 19:42:26.199 +01:00 [DBG] is empty: True
+2024-04-04 19:42:26.200 +01:00 [DBG] Finished sending batches of analytics to pinpoint.
+2024-04-04 20:42:26.253 +01:00 [DBG] Sending Metrics batches
+2024-04-04 20:42:26.285 +01:00 [DBG] Checking if table MetricsTable is empty
+2024-04-04 20:42:26.287 +01:00 [DBG] is empty: True
+2024-04-04 20:42:26.287 +01:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2024-04-04 20:42:26.288 +01:00 [DBG] Sending Analytics Batches
+2024-04-04 20:42:26.291 +01:00 [DBG] Checking if table AnalyticsTable is empty
+2024-04-04 20:42:26.292 +01:00 [DBG] is empty: True
+2024-04-04 20:42:26.292 +01:00 [DBG] Finished sending batches of analytics to pinpoint.
+2024-04-04 21:15:31.711 +01:00 [DBG] System will sleep. Connection state: Disconnected
+2024-04-04 23:20:56.927 +01:00 [DBG] System did wake. Connection state: Disconnected
+2024-04-04 23:46:28.678 +01:00 [DBG] Sending Metrics batches
+2024-04-04 23:46:28.746 +01:00 [DBG] Checking if table MetricsTable is empty
+2024-04-04 23:46:28.749 +01:00 [DBG] is empty: True
+2024-04-04 23:46:28.749 +01:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2024-04-04 23:46:28.749 +01:00 [DBG] Sending Analytics Batches
+2024-04-04 23:46:28.752 +01:00 [DBG] Checking if table AnalyticsTable is empty
+2024-04-04 23:46:28.755 +01:00 [DBG] is empty: True
+2024-04-04 23:46:28.755 +01:00 [DBG] Finished sending batches of analytics to pinpoint.
+2024-04-04 23:54:16.301 +01:00 [DBG] System will sleep. Connection state: Disconnected

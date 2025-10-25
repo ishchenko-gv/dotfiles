@@ -83,7 +83,7 @@ plugins=(
   zsh-autosuggestions
   zsh-syntax-highlighting
   fzf-zsh-plugin
-  you-should-use
+#  you-should-use
   zsh-bat
   docker
   docker-compose
@@ -134,3 +134,7 @@ alias rm="rm -v"
 export BAT_THEME="TwoDark"
 
 source ~/.github_tokens
+
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+

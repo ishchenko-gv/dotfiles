@@ -1,0 +1,86 @@
+Platform: MacOS
+App version: 3.9.1
+OS version: Unix 22.4.0.0
+OS description: Unix 22.4.0.0
+2024-03-28 12:14:48.518 +00:00 [DBG] System did wake. Connection state: Disconnected
+2024-03-28 12:19:32.069 +00:00 [DBG] System will sleep. Connection state: Disconnected
+2024-03-28 12:22:22.769 +00:00 [DBG] System did wake. Connection state: Disconnected
+2024-03-28 12:22:41.439 +00:00 [DBG] System will sleep. Connection state: Disconnected
+2024-03-28 12:31:19.276 +00:00 [DBG] System did wake. Connection state: Disconnected
+2024-03-28 12:44:34.561 +00:00 [DBG] Sending Metrics batches
+2024-03-28 12:44:34.610 +00:00 [DBG] Checking if table MetricsTable is empty
+2024-03-28 12:44:34.616 +00:00 [DBG] is empty: True
+2024-03-28 12:44:34.616 +00:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2024-03-28 12:44:34.616 +00:00 [DBG] Sending Analytics Batches
+2024-03-28 12:44:34.619 +00:00 [DBG] Checking if table AnalyticsTable is empty
+2024-03-28 12:44:34.620 +00:00 [DBG] is empty: True
+2024-03-28 12:44:34.621 +00:00 [DBG] Finished sending batches of analytics to pinpoint.
+2024-03-28 13:44:34.494 +00:00 [DBG] Sending Metrics batches
+2024-03-28 13:44:34.503 +00:00 [DBG] Checking if table MetricsTable is empty
+2024-03-28 13:44:34.504 +00:00 [DBG] is empty: True
+2024-03-28 13:44:34.504 +00:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2024-03-28 13:44:34.504 +00:00 [DBG] Sending Analytics Batches
+2024-03-28 13:44:34.506 +00:00 [DBG] Checking if table AnalyticsTable is empty
+2024-03-28 13:44:34.507 +00:00 [DBG] is empty: True
+2024-03-28 13:44:34.507 +00:00 [DBG] Finished sending batches of analytics to pinpoint.
+2024-03-28 13:59:20.565 +00:00 [DBG] System will sleep. Connection state: Disconnected
+2024-03-28 14:51:21.405 +00:00 [DBG] System did wake. Connection state: Disconnected
+2024-03-28 15:35:56.053 +00:00 [DBG] Sending Metrics batches
+2024-03-28 15:35:56.111 +00:00 [DBG] Checking if table MetricsTable is empty
+2024-03-28 15:35:56.113 +00:00 [DBG] is empty: True
+2024-03-28 15:35:56.113 +00:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2024-03-28 15:35:56.113 +00:00 [DBG] Sending Analytics Batches
+2024-03-28 15:35:56.116 +00:00 [DBG] Checking if table AnalyticsTable is empty
+2024-03-28 15:35:56.117 +00:00 [DBG] is empty: True
+2024-03-28 15:35:56.117 +00:00 [DBG] Finished sending batches of analytics to pinpoint.
+2024-03-28 16:17:54.034 +00:00 [DBG] System will sleep. Connection state: Disconnected
+2024-03-28 16:41:30.802 +00:00 [DBG] System did wake. Connection state: Disconnected
+2024-03-28 16:47:38.851 +00:00 [DBG] System will sleep. Connection state: Disconnected
+2024-03-28 16:54:51.831 +00:00 [DBG] System did wake. Connection state: Disconnected
+2024-03-28 17:06:17.888 +00:00 [DBG] Sending Metrics batches
+2024-03-28 17:06:17.905 +00:00 [DBG] Checking if table MetricsTable is empty
+2024-03-28 17:06:17.906 +00:00 [DBG] is empty: True
+2024-03-28 17:06:17.906 +00:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2024-03-28 17:06:17.906 +00:00 [DBG] Sending Analytics Batches
+2024-03-28 17:06:17.907 +00:00 [DBG] Checking if table AnalyticsTable is empty
+2024-03-28 17:06:17.908 +00:00 [DBG] is empty: True
+2024-03-28 17:06:17.908 +00:00 [DBG] Finished sending batches of analytics to pinpoint.
+2024-03-28 18:06:17.917 +00:00 [DBG] Sending Metrics batches
+2024-03-28 18:06:17.927 +00:00 [DBG] Checking if table MetricsTable is empty
+2024-03-28 18:06:17.928 +00:00 [DBG] is empty: True
+2024-03-28 18:06:17.928 +00:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2024-03-28 18:06:17.928 +00:00 [DBG] Sending Analytics Batches
+2024-03-28 18:06:17.930 +00:00 [DBG] Checking if table AnalyticsTable is empty
+2024-03-28 18:06:17.930 +00:00 [DBG] is empty: True
+2024-03-28 18:06:17.930 +00:00 [DBG] Finished sending batches of analytics to pinpoint.
+2024-03-28 19:06:17.970 +00:00 [DBG] Sending Metrics batches
+2024-03-28 19:06:17.988 +00:00 [DBG] Checking if table MetricsTable is empty
+2024-03-28 19:06:17.989 +00:00 [DBG] is empty: True
+2024-03-28 19:06:17.990 +00:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2024-03-28 19:06:17.990 +00:00 [DBG] Sending Analytics Batches
+2024-03-28 19:06:17.993 +00:00 [DBG] Checking if table AnalyticsTable is empty
+2024-03-28 19:06:17.994 +00:00 [DBG] is empty: True
+2024-03-28 19:06:17.995 +00:00 [DBG] Finished sending batches of analytics to pinpoint.
+2024-03-28 19:53:46.494 +00:00 [DBG] System will sleep. Connection state: Disconnected
+2024-03-28 20:06:09.463 +00:00 [DBG] System did wake. Connection state: Disconnected
+2024-03-28 20:17:00.303 +00:00 [DBG] Sending Metrics batches
+2024-03-28 20:17:00.336 +00:00 [DBG] Checking if table MetricsTable is empty
+2024-03-28 20:17:00.337 +00:00 [DBG] is empty: True
+2024-03-28 20:17:00.337 +00:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2024-03-28 20:17:00.337 +00:00 [DBG] Sending Analytics Batches
+2024-03-28 20:17:00.339 +00:00 [DBG] Checking if table AnalyticsTable is empty
+2024-03-28 20:17:00.340 +00:00 [DBG] is empty: True
+2024-03-28 20:17:00.340 +00:00 [DBG] Finished sending batches of analytics to pinpoint.
+2024-03-28 21:17:00.381 +00:00 [DBG] Sending Metrics batches
+2024-03-28 21:17:00.413 +00:00 [DBG] Checking if table MetricsTable is empty
+2024-03-28 21:17:00.415 +00:00 [DBG] is empty: True
+2024-03-28 21:17:00.415 +00:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2024-03-28 21:17:00.415 +00:00 [DBG] Sending Analytics Batches
+2024-03-28 21:17:00.419 +00:00 [DBG] Checking if table AnalyticsTable is empty
+2024-03-28 21:17:00.419 +00:00 [DBG] is empty: True
+2024-03-28 21:17:00.420 +00:00 [DBG] Finished sending batches of analytics to pinpoint.
+2024-03-28 21:24:57.999 +00:00 [DBG] System will sleep. Connection state: Disconnected
+2024-03-28 21:26:16.590 +00:00 [DBG] System did wake. Connection state: Disconnected
+2024-03-28 21:26:28.860 +00:00 [DBG] System will sleep. Connection state: Disconnected
+2024-03-28 21:26:57.808 +00:00 [DBG] System did wake. Connection state: Disconnected
+2024-03-28 21:27:02.476 +00:00 [DBG] System will sleep. Connection state: Disconnected

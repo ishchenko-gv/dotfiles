@@ -1,0 +1,2 @@
+/Users/ishchenko-gv/.config/AWSVPNClient/OpenVpnConfigs/ishchenkogv
+1709915045

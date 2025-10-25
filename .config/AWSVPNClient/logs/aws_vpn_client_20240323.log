@@ -1,0 +1,12 @@
+Platform: MacOS
+App version: 3.9.1
+OS version: Unix 22.4.0.0
+OS description: Unix 22.4.0.0
+2024-03-23 04:58:18.444 +00:00 [DBG] Sending Metrics batches
+2024-03-23 04:58:18.600 +00:00 [DBG] Checking if table MetricsTable is empty
+2024-03-23 04:58:18.601 +00:00 [DBG] is empty: True
+2024-03-23 04:58:18.601 +00:00 [DBG] Finished sending batches of metrics to cloudwatch.
+2024-03-23 04:58:18.601 +00:00 [DBG] Sending Analytics Batches
+2024-03-23 04:58:18.603 +00:00 [DBG] Checking if table AnalyticsTable is empty
+2024-03-23 04:58:18.603 +00:00 [DBG] is empty: True
+2024-03-23 04:58:18.604 +00:00 [DBG] Finished sending batches of analytics to pinpoint.
