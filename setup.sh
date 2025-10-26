@@ -2,6 +2,25 @@
 
 mkdir -vp ~/.config
 
+echo "✨ Checking shell..."
+
+if ! command -v zsh &>/dev/null; then
+  echo "ℹ️ zsh not found, installing..."
+  brew install zsh
+
+  echo "Changing default shell"
+  chsh -s $(which zsh)
+
+  echo "Setup zsh config"
+  mv ~/.zshrc ~/.zshrc.bak
+  ln -s ~/.dotfiles/.zshrc ~/.zshrc
+
+  echo "Installing ohmyzsh..."
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+else
+  echo "✅ zsh found"
+fi
+
 echo "✨ Checking dependencies..."
 
 if ! command -v luarocks &>/dev/null; then
@@ -19,13 +38,6 @@ else
 fi
 
 echo "✨ Checking symlinks..."
-
-if [ ! -e "$HOME/.zshrc" ]; then
-  echo "ℹ️ ~/.zshrc not found, creating symlink..."
-  ln -s ~/.dotfiles/.zshrc ~/.zshrc
-else
-  echo "✅ ~/.zshrc found"
-fi
 
 if [ ! -e "$HOME/.config/nvim" ]; then
   echo "ℹ️ ~/.config/nvim/ not found, creating symlink..."
