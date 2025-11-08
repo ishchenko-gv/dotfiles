@@ -45,7 +45,7 @@ for APP in "${FORMULAE[@]}"; do
   else
     echo "Installing $FORMULAE_NAME..."
     if brew install "$FORMULAE_NAME"; then
-      echo "$✅ FORMULAE_NAME successfully installed"
+      echo "✅ $FORMULAE_NAME successfully installed"
     else
       echo "❌ $FORMULAE_NAME installation failed"
     fi
