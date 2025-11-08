@@ -42,7 +42,7 @@ defaults write com.apple.Dock showhidden -bool TRUE
 
 # Disable "natural" scroll direction (i.e., scroll wheel up moves content down).
 # Set to TRUE to revert to the macOS default (Natural Scrolling).
-defaults write NSGlobalDomain com.apple.swipescrolldirection -bool FALSE
+# defaults write NSGlobalDomain com.apple.swipescrolldirection -bool FALSE
 
 # ------------------------------
 # 3. KEYBOARD / INPUT TWEAKS
