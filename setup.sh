@@ -2,6 +2,13 @@
 
 mkdir -vp ~/.config
 
+if ! command -v brew &>/dev/null; then
+  echo "Installing brew..."
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+else
+  echo "✅ brew found"
+fi
+
 if ! command -v zsh &>/dev/null; then
   echo "Installing zsh..."
   brew install zsh
