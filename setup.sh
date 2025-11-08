@@ -83,7 +83,7 @@ else
 fi
 
 if ! brew list --cask aerospace &>/dev/null; then
-  if [ -e "/Applications/AeroSpace.app"]; then
+  if [ -e "/Applications/AeroSpace.app" ]; then
     echo "/Applications/AeroSpace.app found"
   else
     echo "Installing aerospace..."
@@ -124,10 +124,10 @@ else
 fi
 
 if ! brew list --cask google-drive &>/dev/null; then
-  if [ -e "/Applications/Google Drive.app"]; then
+  if [ -e "/Applications/Google Drive.app" ]; then
     echo "✅ /Applications/Google Drive.app found"
   else
-    echo "Insstalling Google Drive..."
+    echo "Installing Google Drive..."
     brew install --cask google-drive
   fi
 else
@@ -135,7 +135,7 @@ else
 fi
 
 if ! brew list --cask telegram &>/dev/null; then
-  if [ -e "/Applications/Telegram.app"]; then
+  if [ -e "/Applications/Telegram.app" ]; then
     echo "✅ /Applications/Telegram.app found"
   else
     echo "Installing Telegram..."
@@ -168,7 +168,7 @@ else
 fi
 
 if ! brew list --cask postman &>/dev/null; then
-  if [ -e "/Applications/Postman.app "]; then
+  if [ -e "/Applications/Postman.app " ]; then
     echo "✅ /Applications/Postman.app found"
   else
     echo "Installing Postman..."
@@ -179,7 +179,7 @@ else
 fi
 
 if ! brew list --cask visual-studio-code; then
-  if [ -e "/Applications/Visual Studio Code.app"]; then
+  if [ -e "/Applications/Visual Studio Code.app" ]; then
     echo "✅ /Applications/Visual Studio Code.app found"
   else
     echo "Installing Visual Studio Code..."
