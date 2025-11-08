@@ -25,14 +25,6 @@ else
   echo "✅ zsh found"
 fi
 
-if ! brew list --cask aerospace &>/dev/null; then
-  echo "Installing aerospace..."
-  brew install --cask nikitabobko/tap/aerospace
-  ln -s ~/.dotfiles/aerospace.toml ~/.config/aerospace/aerospace.toml
-else
-  echo "✅ aerospace found"
-fi
-
 if ! brew list nvim &>/dev/null; then
   echo "Installing nvim..."
   brew install nvim
@@ -51,7 +43,6 @@ if ! brew list nvim &>/dev/null; then
   else
     echo "✅ ripgrep found"
   fi
-
 else
   echo "✅ nvim found"
 fi
@@ -77,30 +68,123 @@ else
   echo "✅ tmux config found in ~/.config/tmux/"
 fi
 
-if ! brew list --cask google-chrome &>/dev/null; then
-  if [ -e "/Applications/Google Chrome.app" ]; then
-    echo "✅ /Applications/Google Chrome.app found"
-  else
-    echo "Installing google-chrome..."
-    brew install google-chrome
-  fi
+if ! command -v go &>/dev/null; then
+  echo "Installing go..."
+  brew install go
 else
-  echo "✅ google-chrome found"
+  echo "✅ go found"
 fi
 
-if ! brew list --cask telegram &>/dev/null; then
-  if [ -e "/Applications/Telegram.app"]; then
-    echo "/Applications/Telegram.app found"
+if ! command -v python3 &>/dev/null; then
+  echo "Installing python3..."
+  brwe install python3
+else
+  echo "✅ python3 found"
+fi
+
+if ! brew list --cask aerospace &>/dev/null; then
+  if [ -e "/Applications/AeroSpace.app"]; then
+    echo "/Applications/AeroSpace.app found"
   else
-    brew install --cask telegram
+    echo "Installing aerospace..."
+    brew install --cask nikitabobko/tap/aerospace
+    ln -s ~/.dotfiles/aerospace.toml ~/.config/aerospace/aerospace.toml
   fi
 else
-  echo "✅ telegram found"
+  echo "✅ aerospace found"
 fi
 
 if ! brew list colima &>/dev/null; then
   echo "Installing colima..."
   brew install colima
 else
-  echo "✅ columa found"
+  echo "✅ colima found"
+fi
+
+if ! brew list --cask iterm2 &>/dev/null; then
+  if [ -e "/Applications/iTerm.app" ]; then
+    echo "✅ /Applications/iTerm.app found"
+  else
+    echo "Installing iTerm2..."
+    brew install --cask iterm2
+  fi
+else
+  echo "✅ iTerm2 found"
+fi
+
+if ! brew list --cask google-chrome &>/dev/null; then
+  if [ -e "/Applications/Google Chrome.app" ]; then
+    echo "✅ /Applications/Google Chrome.app found"
+  else
+    echo "Installing Google Chrome..."
+    brew install google-chrome
+  fi
+else
+  echo "✅ Google Chrome found"
+fi
+
+if ! brew list --cask google-drive &>/dev/null; then
+  if [ -e "/Applications/Google Drive.app"]; then
+    echo "✅ /Applications/Google Drive.app found"
+  else
+    echo "Insstalling Google Drive..."
+    brew install --cask google-drive
+  fi
+else
+  echo "✅ Google Drive found"
+fi
+
+if ! brew list --cask telegram &>/dev/null; then
+  if [ -e "/Applications/Telegram.app"]; then
+    echo "✅ /Applications/Telegram.app found"
+  else
+    echo "Installing Telegram..."
+    brew install --cask telegram
+  fi
+else
+  echo "✅ Telegram found"
+fi
+
+if ! brew list --cask spotify &>/dev/null; then
+  if [ -e "/Applications/Spotify.app" ]; then
+    echo "✅ /Applications/Spotify.app found"
+  else
+    echo "Installing Spotify..."
+    brew install --cask spotify
+  fi
+else
+  echo "✅ Spotify found"
+fi
+
+if ! brew list --cask obsidian &>/dev/null; then
+  if [ -e "/Applications/Obsidian.app" ]; then
+    echo "✅ /Applications/Obsidian.app found"
+  else
+    echo "Installing Obsidian..."
+    brew install --cask obsidian
+  fi
+else
+  echo "✅ Obsidian found"
+fi
+
+if ! brew list --cask postman &>/dev/null; then
+  if [ -e "/Applications/Postman.app "]; then
+    echo "✅ /Applications/Postman.app found"
+  else
+    echo "Installing Postman..."
+    brew install --cask postman
+  fi
+else
+  echo "✅ Postman found"
+fi
+
+if ! brew list --cask visual-studio-code; then
+  if [ -e "/Applications/Visual Studio Code.app"]; then
+    echo "✅ /Applications/Visual Studio Code.app found"
+  else
+    echo "Installing Visual Studio Code..."
+    brew install --cask visual-studio-code
+  fi
+else
+  echo "✅ Visual Studio Code found"
 fi
