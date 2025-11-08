@@ -91,7 +91,7 @@ fi
 
 if ! brew list --cask aerospace &>/dev/null; then
   if [ -e "/Applications/AeroSpace.app" ]; then
-    echo "✅ AeroSpace found in /Applications/AeroSpace.app"
+    echo "✅ AeroSpace found in \"/Applications/AeroSpace.app\""
   else
     echo "Installing aerospace..."
     brew install --cask nikitabobko/tap/aerospace
@@ -103,7 +103,7 @@ fi
 
 if ! brew list --cask iterm2 &>/dev/null; then
   if [ -e "/Applications/iTerm.app" ]; then
-    echo "✅ iTerm2 found in /Applications/iTerm.app"
+    echo "✅ iTerm2 found in \"/Applications/iTerm.app\""
   else
     echo "Installing iTerm2..."
     brew install --cask iterm2
@@ -114,7 +114,7 @@ fi
 
 if ! brew list --cask google-chrome &>/dev/null; then
   if [ -e "/Applications/Google Chrome.app" ]; then
-    echo "✅ Google Chrome found in /Applications/Google Chrome.app"
+    echo "✅ Google Chrome found in \"/Applications/Google Chrome.app\""
   else
     echo "Installing Google Chrome..."
     brew install google-chrome
@@ -125,7 +125,7 @@ fi
 
 if ! brew list --cask google-drive &>/dev/null; then
   if [ -e "/Applications/Google Drive.app" ]; then
-    echo "✅ Google Drive found in /Applications/Google Drive.app"
+    echo "✅ Google Drive found in \"/Applications/Google Drive.app\""
   else
     echo "Installing Google Drive..."
     brew install --cask google-drive
@@ -136,7 +136,7 @@ fi
 
 if ! brew list --cask telegram &>/dev/null; then
   if [ -e "/Applications/Telegram.app" ]; then
-    echo "✅ Telegram found in /Applications/Telegram.app"
+    echo "✅ Telegram found in \"/Applications/Telegram.app\""
   else
     echo "Installing Telegram..."
     brew install --cask telegram
@@ -147,7 +147,7 @@ fi
 
 if ! brew list --cask spotify &>/dev/null; then
   if [ -e "/Applications/Spotify.app" ]; then
-    echo "✅ Spotify found in /Applications/Spotify.app"
+    echo "✅ Spotify found in \"/Applications/Spotify.app\""
   else
     echo "Installing Spotify..."
     brew install --cask spotify
@@ -158,7 +158,7 @@ fi
 
 if ! brew list --cask obsidian &>/dev/null; then
   if [ -e "/Applications/Obsidian.app" ]; then
-    echo "✅ Obsidian found in /Applications/Obsidian.app"
+    echo "✅ Obsidian found in \"/Applications/Obsidian.app\""
   else
     echo "Installing Obsidian..."
     brew install --cask obsidian
@@ -169,7 +169,7 @@ fi
 
 if ! brew list --cask postman &>/dev/null; then
   if [ -e "/Applications/Postman.app" ]; then
-    echo "✅ Postman found in /Applications/Postman.app"
+    echo "✅ Postman found in \"/Applications/Postman.app\""
   else
     echo "Installing Postman..."
     brew install --cask postman
@@ -178,9 +178,9 @@ else
   echo "✅ Postman found"
 fi
 
-if ! brew list --cask visual-studio-code; then
+if ! brew list --cask visual-studio-code &>/dev/null; then
   if [ -e "/Applications/Visual Studio Code.app" ]; then
-    echo "✅ Visual Studio Code found in /Applications/Visual Studio Code.app"
+    echo "✅ Visual Studio Code found in \"/Applications/Visual Studio Code.app\""
   else
     echo "Installing Visual Studio Code..."
     brew install --cask visual-studio-code
