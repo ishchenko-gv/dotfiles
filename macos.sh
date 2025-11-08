@@ -77,7 +77,7 @@ defaults write com.apple.screencapture disable-shadow -bool TRUE
 
 # Change default screenshot location to a specific folder
 mkdir -vp ~/Documents/Screenshots
-# defaults write com.apple.screencapture location ~/Documents/Screenshots
+defaults write com.apple.screencapture location ~/Documents/Screenshots
 
 # ----------------------------
 # 5. FINAL STEPS
