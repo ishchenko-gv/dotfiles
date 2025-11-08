@@ -53,10 +53,15 @@ for APP in "${FORMULAE[@]}"; do
 done
 
 for APP in "${CASK[@]}"; do
-  CASK_NAME=$(echo "$APP" | cut -d ":" -f1)
-  MANUALLY_INSTALLED_PATH=$(echo "$APP" | cut -d ":" -f2)
+  if [[ "$APP" == *":"* ]]; then
+    CASK_NAME=$(echo "$APP" | cut -d ":" -f1)
+    MANUALLY_INSTALLED_PATH=$(echo "$APP" | cut -d ":" -f2)
+  else
+    CASK_NAME="$APP"
+    MANUALLY_INSTALLED_PATH=""
+  fi
 
-  if [ -e "$MANUALLY_INSTALLED_PATH" ]; then
+  if [[ "$MANUALLY_INSTALLED_PATH" != "" ]] && [[ -e "$MANUALLY_INSTALLED_PATH" ]]; then
     echo "✅ [skip] $CASK_NAME found manually installed in \"$MANUALLY_INSTALLED_PATH\""
   elif command brew list --cask "$CASK_NAME" &>/dev/null; then
     echo "✅ [skip] $CASK_NAME found"
