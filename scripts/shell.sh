@@ -5,11 +5,23 @@ if ! command -v zsh &>/dev/null; then
   exit 1
 fi
 
-echo "Changing default shell..."
-chsh -s $(which zsh)
+if [[ "$LAUNCHER_SHELL" != "zsh" ]]; then
+  echo "Changing shell..."
+  chsh -s $(which zsh)
+else
+  echo "✅ [skip] Current shell is zsh"
+fi
 
-echo "Linking zsh config..."
-ln -s ~/.dotfiles/.zshrc ~/.zshrc
+if [[ ! -e "$HOME/.zshrc" ]]; then
+  echo "Linking zsh config..."
+  ln -s ~/.dotfiles/.zshrc ~/.zshrc
+else
+  echo "✅ [skip] zsh config found in ~/.zshrc"
+fi
 
-echo "Installing ohmyzsh..."
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+if [[ ! -e "$HOME/.oh-my-zsh" ]]; then
+  echo "Installing ohmyzsh..."
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+else
+  echo "✅ [skip] oh-my-zsh found"
+fi
