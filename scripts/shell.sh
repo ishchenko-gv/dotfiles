@@ -1,6 +1,7 @@
 #/bin/bash
 
 if ! command -v zsh &>/dev/null; then
+  # it's supposed zsh has been installed in brew.sh script or manually
   echo "❌ zsh not found"
   exit 1
 fi
