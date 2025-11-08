@@ -5,6 +5,10 @@ if ! command -v zsh &>/dev/null; then
   exit 1
 fi
 
+if [[ ! -n "$LAUNCHER_SHELL" ]]; then
+  LAUNCHER_SHELL=$(ps -p $PPID -o comm=)
+fi
+
 if [[ "$LAUNCHER_SHELL" != "zsh" ]]; then
   echo "Changing shell..."
   chsh -s $(which zsh)
