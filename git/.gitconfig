@@ -1,0 +1,26 @@
+[user]
+	name = Georgii Ishchenko
+	email = ishchenko.gv@gmail.com
+[init]
+	defaultBranch = master
+[pull]
+	rebase = true
+[credential]
+	helper = osxkeychain
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = nvim
+	pager = delta
+[merge]
+	tool = vscode
+[mergetool "vscode"]
+	cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
+[column]
+	ui = auto
+[rebase]
+	autoStash = true
+[delta]
+	line-numbers = true
+	side-by-side = true
+	navigate = true
+	features = decorations

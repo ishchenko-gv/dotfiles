@@ -3,7 +3,7 @@
 export LAUNCHER_SHELL=$(ps -p $PPID -o comm=)
 echo "shell: $LAUNCHER_SHELL"
 
-./brew.sh
-./shell.sh
-./config.sh
-./macos.sh
+~/.dotfiles/scripts/brew.sh
+~/.dotfiles/scripts/shell.sh
+~/.dotfiles/scripts/config.sh
+~/.dotfiles/scripts/macos.sh

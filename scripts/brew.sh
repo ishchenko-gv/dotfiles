@@ -9,6 +9,7 @@ fi
 
 FORMULAE=(
   "git"
+  "delta:git-delta"
   "zsh"
   "nvim"
   "luarocks"

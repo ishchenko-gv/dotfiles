@@ -10,7 +10,7 @@ if [[ ! -n "$LAUNCHER_SHELL" ]]; then
   LAUNCHER_SHELL=$(ps -p $PPID -o comm=)
 fi
 
-if [[ "$LAUNCHER_SHELL" != "zsh" ]]; then
+if ! [[ "$LAUNCHER_SHELL" =~ "zsh" ]]; then
   echo "Changing shell..."
   chsh -s $(which zsh)
 else
