@@ -9,6 +9,17 @@ else
   echo "✅ brew found"
 fi
 
+if ! brew list --cask google-chrome &>/dev/null; then
+  if [ -e "/Applications/Google Chrome.app" ]; then
+    echo "✅ /Applications/Google Chrome.app found"
+  else
+    echo "Installing google-chrome..."
+    brew install google-chrome
+  fi
+else
+  echo "✅ google-chrome found"
+fi
+
 if ! command -v zsh &>/dev/null; then
   echo "Installing zsh..."
   brew install zsh
