@@ -25,7 +25,7 @@ CASK=(
   "google-chrome:/Applications/Google Chrome.app"
   "google-drive:/Applications/Google Drive.app"
   "telegram:/Applications/Telegram.app"
-  "spotify:/Applications/Telegram.app"
+  "spotify:/Applications/Spotify.app"
   "obsidian:/Applications/Obsidian.app"
   "postman:/Applications/Postman.app"
   "visual-studio-code:/Applications/Visual Studio Code.app"
