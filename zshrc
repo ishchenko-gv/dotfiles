@@ -121,6 +121,7 @@ alias lst="eza --icons --git --git-ignore --oneline --all --tree --level=1"
 alias mkdir="mkdir -vp"
 alias mv="mv -iv"
 alias rm="rm -v"
+alias cd="z"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -132,3 +133,6 @@ export BAT_THEME="TwoDark"
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
+
+
+eval "$(zoxide init zsh)"
