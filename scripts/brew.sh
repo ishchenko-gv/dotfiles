@@ -13,10 +13,21 @@ FORMULAE=(
   "nvim"
   "luarocks"
   "rg:ripgrep"
+  "jq"
+  "httpie"
+  "eza"
+  "fd"
+  "bat"
+  "htop"
+  "tldr"
+  "bandwhich"
+  "fzf"
+  "zoxide"
   "tmux"
   "go"
   "python3"
   "colima"
+  "kubectl"
 )
 
 CASK=(
