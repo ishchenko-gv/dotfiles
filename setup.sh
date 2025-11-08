@@ -9,6 +9,13 @@ else
   echo "✅ brew found"
 fi
 
+if ! command -v git &>/dev/null; then
+  echo "Installing git..."
+  brew install git
+else
+  echo "✅ git found"
+fi
+
 if ! command -v zsh &>/dev/null; then
   echo "Installing zsh..."
   brew install zsh
