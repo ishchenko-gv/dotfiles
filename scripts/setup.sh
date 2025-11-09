@@ -1,4 +1,7 @@
-#/bin/bash
+#!/bin/bash
+
+# Exit on: unset variables (-u), command failure (-e), and pipe failure (-o pipefail)
+set -euo pipefail
 
 git pull
 

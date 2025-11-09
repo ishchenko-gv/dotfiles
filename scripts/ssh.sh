@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 if [[ ! -e "$HOME/.ssh/config" ]]; then
   echo "ssh config not found, copying example..."

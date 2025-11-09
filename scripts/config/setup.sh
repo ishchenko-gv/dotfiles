@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 source ./config/backup-configs.sh
 source ./config/remove-configs.sh

@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 if ! command -v zsh &>/dev/null; then
   # it's supposed that zsh has been installed in brew.sh script or manually
