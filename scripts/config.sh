@@ -1,7 +1,7 @@
 #!/bin/bash
 
 checkSymlink() {
-  if [[ -L "$1" ]] && ! [[ -e "$1" ]]; then
+  if [[ -L "$1" ]] && [[ ! -e "$1" ]]; then
     echo "$1 is broken"
     rm "$1"
     return 1

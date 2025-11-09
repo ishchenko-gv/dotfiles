@@ -8,6 +8,7 @@ else
 fi
 
 FORMULAE=(
+  "coreutils:gsort"
   "git"
   "git-delta:delta"
   "zsh"
@@ -85,3 +86,5 @@ for APP in "${CASK[@]}"; do
     echo "❌ $CASK_NAME installation failed"
   fi
 done
+
+brew cleanup
