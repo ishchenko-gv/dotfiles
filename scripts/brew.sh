@@ -12,7 +12,6 @@ FORMULAE=(
   "git"
   "git-delta:delta"
   "zsh"
-  "openssh"
   "nvim"
   "luarocks"
   "ripgrep:rg"
@@ -33,6 +32,7 @@ FORMULAE=(
   "docker"
   "docker-compose"
   "kubectl"
+  "openssh:ssh"
 )
 
 CASK=(
