@@ -1,0 +1,9 @@
+Host github.com
+  AddKeysToAgent yes
+  IdentityFile ~/.ssh/github
+
+Host ishchenko.dev
+  HostName ishchenko.dev
+  User georgii
+  IdentityFile ~/.ssh/ishchenko.dev
+
