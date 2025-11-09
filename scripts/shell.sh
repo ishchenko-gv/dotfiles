@@ -1,8 +1,7 @@
 #/bin/bash
 
 if ! command -v zsh &>/dev/null; then
-  # it's supposed that zsh has been installed
-  # in brew.sh script or manually
+  # it's supposed that zsh has been installed in brew.sh script or manually
   echo "❌ zsh not found"
   exit 1
 fi
@@ -16,13 +15,6 @@ if [[ "$LAUNCHER_SHELL" =~ "zsh" ]]; then
 else
   echo "Changing shell..."
   chsh -s $(which zsh)
-fi
-
-if [[ -e "$HOME/.zshrc" ]]; then
-  echo "✅ [skip] zsh config found in ~/.zshrc"
-else
-  echo "Linking zsh config..."
-  ln -s ~/.dotfiles/.zshrc ~/.zshrc
 fi
 
 if [[ -e "$HOME/.oh-my-zsh" ]]; then

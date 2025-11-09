@@ -7,6 +7,6 @@ echo "shell: $LAUNCHER_SHELL"
 
 ./scripts/brew.sh
 ./scripts/shell.sh
-./scripts/config/setup.sh
+./scripts/config/link-configs.sh
 ./scripts/ssh.sh
 ./scripts/macos.sh

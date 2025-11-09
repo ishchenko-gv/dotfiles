@@ -1,5 +1,5 @@
 #/bin/bash
 
-~/.dotfiles/scripts/config/backup-configs.sh
-~/.dotfiles/scripts/config/remove-configs.sh
-~/.dotfiles/scripts/config/link-configs.sh
+./scripts/config/backup-configs.sh
+./scripts/config/remove-configs.sh
+./scripts/config/link-configs.sh

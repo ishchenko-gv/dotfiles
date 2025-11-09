@@ -1,6 +1,6 @@
 #/bin/bash
 
-source ~/.dotfiles/scripts/config/config-paths.sh
+source ./scripts/config-paths.sh
 
 if [[ -z "$CONF_PATHS" ]]; then
   echo "$CONF_PATHS is not defined, check if config-paths.sh is sourced correctly"
