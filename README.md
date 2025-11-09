@@ -4,15 +4,15 @@
 git clone git@github.com:ishchenko-gv/dotfiles.git ~/.dotfiles
 ```
 
-### First time install
-For the first time setup script will install all the required software skipping already installed and collect all the config file backups in ~/.dotfiles-backups directory, then remove previous config files and create new symlinks to the configs in ~/.dotfiles folder
+### First installation
+For the first time setup script will install all the required software and make config file backups in ~/.dotfiles-backups
 ```
 
 cd ~/.dotfiles/scripts && ./setup.sh
 ```
 
-### Updating already installed dotfiles
-In this case updating script will install the software as well but it doesn't do any backups and removings, it checks existing symlinks presence and correctness and links new ones if required
+### Updating dotfiles
+Unlike setup updating script doesn't make any backups, it fetches fresh dotfiles version, updates and installs missing software and fix config symlinks
 ```
 cd ~/.dotfiles/scripts && ./update.sh
 ```
