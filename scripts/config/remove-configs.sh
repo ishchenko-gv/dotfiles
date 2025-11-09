@@ -8,6 +8,8 @@ if [[ -z "$CONF_PATHS" ]]; then
 fi
 
 for CONF_PATH in "${CONF_PATHS[@]}"; do
-  echo "Removing config $CONF_PATH"
-  rm -rv "$CONF_PATH"
+  if [[ -e "$CONF_PATH" ]]; then
+    echo "Removing config $CONF_PATH"
+    rm -rv "$CONF_PATH"
+  fi
 done
