@@ -9,11 +9,11 @@ fi
 
 FORMULAE=(
   "git"
-  "delta:git-delta"
+  "git-delta:delta"
   "zsh"
   "nvim"
   "luarocks"
-  "rg:ripgrep"
+  "ripgrep:rg"
   "jq"
   "httpie"
   "eza"
@@ -28,6 +28,8 @@ FORMULAE=(
   "go"
   "python3"
   "colima"
+  "docker"
+  "docker-compose"
   "kubectl"
 )
 
@@ -45,11 +47,11 @@ CASK=(
 
 for APP in "${FORMULAE[@]}"; do
   if [[ "$APP" == *":"* ]]; then
-    CLI_NAME=$(echo "$APP" | cut -d ":" -f1)
-    FORMULAE_NAME=$(echo "$APP" | cut -d ":" -f2)
+    FORMULAE_NAME=$(echo "$APP" | cut -d ":" -f1)
+    CLI_NAME=$(echo "$APP" | cut -d ":" -f2)
   else
-    CLI_NAME="$APP"
     FORMULAE_NAME="$APP"
+    CLI_NAME="$APP"
   fi
 
   if command -v "$CLI_NAME" &>/dev/null; then
@@ -73,7 +75,7 @@ for APP in "${CASK[@]}"; do
     MANUALLY_INSTALLED_PATH=""
   fi
 
-  if [[ "$MANUALLY_INSTALLED_PATH" != "" ]] && [[ -e "$MANUALLY_INSTALLED_PATH" ]]; then
+  if [[ -n "$MANUALLY_INSTALLED_PATH" ]] && [[ -e "$MANUALLY_INSTALLED_PATH" ]]; then
     echo "✅ [skip] $CASK_NAME found manually installed in \"$MANUALLY_INSTALLED_PATH\""
   elif command brew list --cask "$CASK_NAME" &>/dev/null; then
     echo "✅ [skip] $CASK_NAME found"
