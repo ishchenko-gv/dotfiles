@@ -7,10 +7,14 @@ else
   echo "✅ [skip] brew found"
 fi
 
-# Each entry represents formula name.
-# In cases where the formula and the command to use it are not the same,
+# Each entry represents formulae name.
+# In cases where the formulae and the command to use it are not the same,
 # the command is provided divided by a colon. The command is then used
 # to check whether the program is already installed.
+#
+# The installation check is implemented by checking if the command is
+# available instead of checking brew list, considering that the program
+# could be installed from other non-brew sources.
 FORMULAE=(
   "coreutils:gsort"
   "git"
