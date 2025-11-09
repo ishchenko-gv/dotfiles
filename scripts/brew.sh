@@ -12,6 +12,7 @@ FORMULAE=(
   "git"
   "git-delta:delta"
   "zsh"
+  "openssh"
   "nvim"
   "luarocks"
   "ripgrep:rg"
