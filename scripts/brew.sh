@@ -7,6 +7,10 @@ else
   echo "✅ [skip] brew found"
 fi
 
+# Each entry represents formula name.
+# In cases where the formula and the command to use it are not the same,
+# the command is provided divided by a colon. The command is then used
+# to check whether the program is already installed.
 FORMULAE=(
   "coreutils:gsort"
   "git"
@@ -35,6 +39,10 @@ FORMULAE=(
   "openssh:ssh"
 )
 
+# Each entry represents cask name and the directory of installed binary.
+# The direcotory is used to check whether program is already installed
+# and used instead of brew list --cask to make possible to install it
+# from other non-brew sources.
 CASK=(
   "iterm2:/Applications/iTerm.app"
   "nikitabobko/tap/aerospace:/Applications/AeroSpace.app"
@@ -46,6 +54,8 @@ CASK=(
   "postman:/Applications/Postman.app"
   "visual-studio-code:/Applications/Visual Studio Code.app"
 )
+
+echo "Installing formulae..."
 
 for APP in "${FORMULAE[@]}"; do
   if [[ "$APP" == *":"* ]]; then
@@ -68,17 +78,19 @@ for APP in "${FORMULAE[@]}"; do
   fi
 done
 
+echo "Installing cask..."
+
 for APP in "${CASK[@]}"; do
   if [[ "$APP" == *":"* ]]; then
     CASK_NAME=$(echo "$APP" | cut -d ":" -f1)
-    MANUALLY_INSTALLED_PATH=$(echo "$APP" | cut -d ":" -f2)
+    INSTALLATION_PATH=$(echo "$APP" | cut -d ":" -f2)
   else
     CASK_NAME="$APP"
-    MANUALLY_INSTALLED_PATH=""
+    INSTALLATION_PATH=""
   fi
 
-  if [[ -n "$MANUALLY_INSTALLED_PATH" ]] && [[ -e "$MANUALLY_INSTALLED_PATH" ]]; then
-    echo "✅ [skip] $CASK_NAME found manually installed in \"$MANUALLY_INSTALLED_PATH\""
+  if [[ -n "$INSTALLATION_PATH" ]] && [[ -e "$INSTALLATION_PATH" ]]; then
+    echo "✅ [skip] $CASK_NAME found installed in \"$INSTALLATION_PATH\""
   elif command brew list --cask "$CASK_NAME" &>/dev/null; then
     echo "✅ [skip] $CASK_NAME found"
   elif brew install --cask "$CASK_NAME"; then
