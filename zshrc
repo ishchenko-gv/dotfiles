@@ -133,6 +133,4 @@ export BAT_THEME="TwoDark"
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
-
-
 eval "$(zoxide init zsh)"
