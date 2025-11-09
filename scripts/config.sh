@@ -28,7 +28,8 @@ if checkSymlink "$HOME/.config/tmux"; then
   echo "✅ [skip] tmux config found in ~/.config/tmux/tmux.conf"
 else
   echo "Linking tmux config in ~/.config/tmux/tmux.conf"
-  mkdir -vp ~/.config/tmux/ && ln -s ~/.dotfiles/tmux.conf ~/.config/tmux/tmux.conf
+  mkdir -vp ~/.config/tmux/
+  ln -s ~/.dotfiles/tmux.conf ~/.config/tmux/tmux.conf
 fi
 
 if checkSymlink "$HOME/.gitconfig"; then
