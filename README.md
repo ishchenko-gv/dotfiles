@@ -5,7 +5,7 @@ git clone git@github.com:ishchenko-gv/dotfiles.git ~/.dotfiles
 ```
 
 ### First time install
-For the first time setup script will install all the required software skipping already installed and collect all the config file backups in ~/.dotfiles-backups directory, then remove previous confgi files and create new symlinks to the configs in ~/.dotfiles folder
+For the first time setup script will install all the required software skipping already installed and collect all the config file backups in ~/.dotfiles-backups directory, then remove previous config files and create new symlinks to the configs in ~/.dotfiles folder
 ```
 
 cd ~/.dotfiles/scripts && ./setup.sh
