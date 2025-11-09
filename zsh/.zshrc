@@ -115,7 +115,7 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias ls="eza --icons --git --oneline --all"
+alias ls="eza --icons --git --all"
 alias lst="eza --icons --git --git-ignore --oneline --all --tree --level=1"
 alias mkdir="mkdir -vp"
 alias mv="mv -iv"
