@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Should be the same as in .zshrc
 ZSH_CUSTOM=~/.oh-my-zsh/custom
 
 if ! command -v zsh &>/dev/null; then
@@ -33,8 +34,6 @@ else
   git clone https://github.com/jeffreytse/zsh-vi-mode \
     $ZSH_CUSTOM/plugins/zsh-vi-mode
 fi
-
-echo "zsh custom: $ZSH_CUSTOM"
 
 if [[ -e "$ZSH_CUSTOM/plugins/zsh-autosuggestions" ]]; then
   echo "✅ [skip] zsh-autosuggestions found"
