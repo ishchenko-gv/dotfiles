@@ -41,6 +41,7 @@ FORMULAE=(
   "docker-compose"
   "kubectl"
   "openssh:ssh"
+  "awscli:aws"
 )
 
 # Each entry represents cask name and the directory of installed binary.
