@@ -23,8 +23,6 @@ for idx in "${!dotfiles_paths[@]}"; do
   conf_path="${conf_paths[$idx]}"
   dotfiles_path="${dotfiles_paths[$idx]}"
 
-  echo "conf files: $conf_path $dotfiles_path"
-
   if checkSymlink "$conf_path"; then
     echo "✅ [skip] config found in $conf_path"
   else
