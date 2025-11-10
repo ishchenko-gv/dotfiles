@@ -7,7 +7,6 @@ git clone git@github.com:ishchenko-gv/dotfiles.git ~/.dotfiles
 ### First installation
 For the first time setup script will install all the required software and make config file backups in ~/.dotfiles-backups
 ```
-
 cd ~/.dotfiles/scripts && ./setup.sh
 ```
 
