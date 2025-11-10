@@ -15,7 +15,7 @@ fi
 # The installation check is implemented by checking if the command is
 # available instead of checking brew list, considering that the program
 # could be installed from other non-brew sources.
-FORMULAE=(
+formulae=(
   "coreutils:gsort"
   "git"
   "git-delta:delta"
@@ -48,7 +48,7 @@ FORMULAE=(
 # The direcotory is used to check whether program is already installed
 # and used instead of brew list --cask to make possible to install it
 # from other non-brew sources.
-CASK=(
+cask=(
   "iterm2:/Applications/iTerm.app"
   "nikitabobko/tap/aerospace:/Applications/AeroSpace.app"
   "google-chrome:/Applications/Google Chrome.app"
@@ -62,46 +62,46 @@ CASK=(
 
 echo "Installing formulae..."
 
-for APP in "${FORMULAE[@]}"; do
-  if [[ "$APP" == *":"* ]]; then
-    FORMULAE_NAME=$(echo "$APP" | cut -d ":" -f1)
-    CLI_NAME=$(echo "$APP" | cut -d ":" -f2)
+for app in "${formulae[@]}"; do
+  if [[ "$app" == *":"* ]]; then
+    formulae_name=$(echo "$app" | cut -d ":" -f1)
+    cli_name=$(echo "$app" | cut -d ":" -f2)
   else
-    FORMULAE_NAME="$APP"
-    CLI_NAME="$APP"
+    formulae_name="$app"
+    cli_name="$app"
   fi
 
-  if command -v "$CLI_NAME" &>/dev/null; then
-    echo "✅ [skip] $FORMULAE_NAME found"
+  if command -v "$cli_name" &>/dev/null; then
+    echo "✅ [skip] $formulae_name found"
   else
-    echo "Installing $FORMULAE_NAME..."
-    if brew install "$FORMULAE_NAME"; then
-      echo "✅ $FORMULAE_NAME successfully installed"
+    echo "Installing $formulae_name..."
+    if brew install "$formulae_name"; then
+      echo "✅ $formulae_name successfully installed"
     else
-      echo "❌ $FORMULAE_NAME installation failed"
+      echo "❌ $formulae_name installation failed"
     fi
   fi
 done
 
 echo "Installing cask..."
 
-for APP in "${CASK[@]}"; do
-  if [[ "$APP" == *":"* ]]; then
-    CASK_NAME=$(echo "$APP" | cut -d ":" -f1)
-    INSTALLATION_PATH=$(echo "$APP" | cut -d ":" -f2)
+for app in "${cask[@]}"; do
+  if [[ "$app" == *":"* ]]; then
+    cask_name=$(echo "$app" | cut -d ":" -f1)
+    installation_path=$(echo "$app" | cut -d ":" -f2)
   else
-    CASK_NAME="$APP"
-    INSTALLATION_PATH=""
+    cask_name="$app"
+    installation_path=""
   fi
 
-  if [[ -n "$INSTALLATION_PATH" ]] && [[ -e "$INSTALLATION_PATH" ]]; then
-    echo "✅ [skip] $CASK_NAME found installed in \"$INSTALLATION_PATH\""
-  elif command brew list --cask "$CASK_NAME" &>/dev/null; then
-    echo "✅ [skip] $CASK_NAME found"
-  elif brew install --cask "$CASK_NAME"; then
-    echo "✅ $CASK_NAME successfully installed"
+  if [[ -n "$installation_path" ]] && [[ -e "$installation_path" ]]; then
+    echo "✅ [skip] $cask_name found installed in \"$installation_path\""
+  elif command brew list --cask "$cask_name" &>/dev/null; then
+    echo "✅ [skip] $cask_name found"
+  elif brew install --cask "$cask_name"; then
+    echo "✅ $cask_name successfully installed"
   else
-    echo "❌ $CASK_NAME installation failed"
+    echo "❌ $cask_name installation failed"
   fi
 done
 

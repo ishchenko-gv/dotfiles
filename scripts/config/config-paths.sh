@@ -1,17 +1,17 @@
 #!/bin/bash
 
-declare CONF_PATHS
-CONF_PATHS[0]="$HOME/.zshrc"
-CONF_PATHS[1]="$HOME/.gitconfig"
-CONF_PATHS[2]="$HOME/.gitignore_global"
-CONF_PATHS[3]="$HOME/.config/nvim"
-CONF_PATHS[4]="$HOME/.config/tmux"
-CONF_PATHS[5]="$HOME/.config/aerospace"
+declare conf_paths
+conf_paths[0]="$HOME/.zshrc"
+conf_paths[1]="$HOME/.gitconfig"
+conf_paths[2]="$HOME/.gitignore_global"
+conf_paths[3]="$HOME/.config/nvim"
+conf_paths[4]="$HOME/.config/tmux"
+conf_paths[5]="$HOME/.config/aerospace"
 
-declare DOTFILES_PATHS
-DOTFILES_PATHS[0]="$HOME/.dotfiles/zsh/.zshrc"
-DOTFILES_PATHS[1]="$HOME/.dotfiles/git/.gitconfig"
-DOTFILES_PATHS[2]="$HOME/.dotfiles/git/.gitignore_global"
-DOTFILES_PATHS[3]="$HOME/.dotfiles/nvim"
-DOTFILES_PATHS[4]="$HOME/.dotfiles/tmux"
-DOTFILES_PATHS[5]="$HOME/.dotfiles/aerospace"
+declare dotfiles_paths
+dotfiles_paths[0]="$HOME/.dotfiles/zsh/.zshrc"
+dotfiles_paths[1]="$HOME/.dotfiles/git/.gitconfig"
+dotfiles_paths[2]="$HOME/.dotfiles/git/.gitignore_global"
+dotfiles_paths[3]="$HOME/.dotfiles/nvim"
+dotfiles_paths[4]="$HOME/.dotfiles/tmux"
+dotfiles_paths[5]="$HOME/.dotfiles/aerospace"

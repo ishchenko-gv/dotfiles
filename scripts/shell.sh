@@ -9,11 +9,11 @@ if ! command -v zsh &>/dev/null; then
   exit 1
 fi
 
-if [[ ! -n "$LAUNCHER_SHELL" ]]; then
-  LAUNCHER_SHELL=$(ps -p $PPID -o comm=)
+if [[ ! -n "$launcher_shell" ]]; then
+  launcher_shell=$(ps -p $PPID -o comm=)
 fi
 
-if [[ "$LAUNCHER_SHELL" =~ "zsh" ]]; then
+if [[ "$launcher_shell" =~ "zsh" ]]; then
   echo "✅ [skip] Current shell is zsh"
 else
   echo "Changing shell..."

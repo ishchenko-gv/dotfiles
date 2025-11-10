@@ -5,8 +5,8 @@ set -euo pipefail
 
 git pull
 
-LAUNCHER_SHELL=$(ps -p $PPID -o comm=)
-echo "shell: $LAUNCHER_SHELL"
+launcher_shell=$(ps -p $PPID -o comm=)
+echo "shell: $launcher_shell"
 
 source ./brew.sh
 source ./shell.sh

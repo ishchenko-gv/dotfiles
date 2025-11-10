@@ -2,19 +2,15 @@
 
 source ./config/config-paths.sh
 
-if [[ -z "$CONF_PATHS" ]]; then
-  echo "$CONF_PATHS is not defined, check if config-paths.sh is sourced correctly"
-  exit 1
-fi
+curr_date=$(date -u +%Y-%m-%dT%H:%M:%S)
+backup_dir="$HOME/.dotfiles-backups/$curr_date"
 
-CURR_DATE=$(date -u +%Y-%m-%dT%H:%M:%S)
-BACKUP_DIR="$HOME/.dotfiles-backups/$CURR_DATE"
+mkdir -vp "$backup_dir"
 
-mkdir -vp "$BACKUP_DIR"
-
-for CONF_PATH in "${CONF_PATHS[@]}"; do
-  if [[ -e "$CONF_PATH" ]]; then
-    echo "Creating $CONF_PATH backup..."
-    cp -rv "$CONF_PATH" "$BACKUP_DIR"
+for conf_path in "${conf_paths[@]}"; do
+  echo "conf path: $conf_path"
+  if [[ -e "$conf_path" ]]; then
+    echo "Creating $conf_path backup..."
+    cp -rv "$conf_path" "$backup_dir"
   fi
 done
