@@ -24,3 +24,5 @@
 	side-by-side = true
 	navigate = true
 	features = decorations
+[push]
+	autoSetupRemote = true
