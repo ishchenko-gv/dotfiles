@@ -58,6 +58,7 @@ cask=(
   "obsidian:/Applications/Obsidian.app"
   "postman:/Applications/Postman.app"
   "visual-studio-code:/Applications/Visual Studio Code.app"
+  "gimp:/Applications/GIMP.app"
 )
 
 echo "Installing formulae..."
@@ -94,9 +95,11 @@ for app in "${cask[@]}"; do
     installation_path=""
   fi
 
+  echo "cask name: $cask_name, installation path: $installation_path"
+
   if [[ -n "$installation_path" ]] && [[ -e "$installation_path" ]]; then
     echo "✅ [skip] $cask_name found installed in \"$installation_path\""
-  elif command brew list --cask "$cask_name" &>/dev/null; then
+  elif brew list --cask "$cask_name" &>/dev/null; then
     echo "✅ [skip] $cask_name found"
   elif brew install --cask "$cask_name"; then
     echo "✅ $cask_name successfully installed"
