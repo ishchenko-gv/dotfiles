@@ -36,6 +36,8 @@ formulae=(
   "tmux"
   "go"
   "python3"
+  "node"
+  "nvm"
   "colima"
   "docker"
   "docker-compose"

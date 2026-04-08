@@ -117,10 +117,11 @@ export LANG=en_US.UTF-8
 
 alias ls="eza --icons --git --all"
 alias lst="eza --icons --git --git-ignore --oneline --all --tree --level=1"
-alias mkdir="mkdir -vp"
+#alias mkdir="mkdir -vp"
 alias mv="mv -iv"
 alias rm="rm -v"
 alias cd="z"
+alias grep="ggrep"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -131,5 +132,11 @@ export BAT_THEME="TwoDark"
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+export PATH="$HOME/.local/bin:$PATH"
 
 eval "$(zoxide init zsh)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
