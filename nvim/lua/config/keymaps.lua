@@ -1,9 +1,9 @@
-vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<cr>")
+vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", { desc = "Toggle file tree" })
 
-vim.keymap.set("n", "<C-h>", "<C-w>h")
-vim.keymap.set("n", "<C-j>", "<C-w>j")
-vim.keymap.set("n", "<C-k>", "<C-w>k")
-vim.keymap.set("n", "<C-l>", "<C-w>l")
+vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Focus left window" })
+vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Focus bottom window" })
+vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Focus top window" })
+vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Focus right window" })
 
 local telescope = require("telescope.builtin")
 vim.keymap.set("n", "<leader>ff", telescope.find_files, { desc = "Telescope find files" })

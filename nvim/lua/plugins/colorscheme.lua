@@ -4,7 +4,7 @@ return {
 	config = true,
 	opts = { contrast = "soft" },
 	config = function()
-		vim.o.background = "dark" -- or "light" for light mode
+		vim.o.background = "dark"
 		vim.cmd([[colorscheme gruvbox]])
 	end,
 }

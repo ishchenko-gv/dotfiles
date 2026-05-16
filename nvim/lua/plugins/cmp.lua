@@ -8,11 +8,9 @@ return {
 		"hrsh7th/cmp-cmdline",
 		"L3MON4D3/LuaSnip", -- snippet engine
 		"saadparwaiz1/cmp_luasnip", -- cmp-luasnip bridge
-		-- "neovim/nvim-lspconfig",
 	},
 	config = function()
 		local cmp = require("cmp")
-
 		cmp.setup({
 			snippet = {
 				-- REQUIRED - you must specify a snippet engine
