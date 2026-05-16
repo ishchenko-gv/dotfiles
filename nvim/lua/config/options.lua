@@ -1,5 +1,19 @@
--- Options are automatically loaded before lazy.nvim startup
--- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
+local opt = vim.opt
 
-vim.api.nvim_set_var("accent_colour", "cyan")
-vim.g.snacks_animate = false
+-- Enable line numbers
+opt.number = true
+
+-- Enable relative line numbers
+opt.relativenumber = true
+
+-- Visual tab size
+opt.tabstop = 2
+
+-- Autoindent size
+opt.shiftwidth = 4
+
+-- Use spaces instead of tabs
+opt.expandtab = true
+
+-- Autoindent
+opt.smartindent = true

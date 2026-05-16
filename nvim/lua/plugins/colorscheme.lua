@@ -1,12 +1,10 @@
 return {
-  { "ellisonleao/gruvbox.nvim" },
-  { "alligator/accent.vim" },
-  { "neanias/everforest-nvim" },
-
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "everforest",
-    },
-  },
+	"ellisonleao/gruvbox.nvim",
+	priority = 1000,
+	config = true,
+	opts = { contrast = "soft" },
+	config = function()
+		vim.o.background = "dark" -- or "light" for light mode
+		vim.cmd([[colorscheme gruvbox]])
+	end,
 }
