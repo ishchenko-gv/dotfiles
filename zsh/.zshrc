@@ -128,7 +128,7 @@ alias grep="ggrep"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export BAT_THEME="TwoDark"
+export BAT_THEME="gruvbox-dark"
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
