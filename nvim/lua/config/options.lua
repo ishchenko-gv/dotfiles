@@ -20,3 +20,6 @@ opt.smartindent = true
 
 -- 24-bit truecolor
 opt.termguicolors = true
+
+-- Make search case insensitive
+opt.ignorecase = true

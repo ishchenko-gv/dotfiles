@@ -23,3 +23,7 @@ vim.keymap.set("n", "<leader>fg", telescope.live_grep, { desc = "Telescope live 
 vim.keymap.set("n", "<leader>fb", telescope.buffers, { desc = "Telescope buffers" })
 vim.keymap.set("n", "<leader>fh", telescope.help_tags, { desc = "Telescope help tags" })
 vim.keymap.set("n", "<leader>D", telescope.diagnostics, { desc = "Telescope diagnostics" })
+
+-- LSP
+-- :nohlsearch - reset current highlighted search
+vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
