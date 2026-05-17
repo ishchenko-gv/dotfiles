@@ -17,3 +17,6 @@ opt.expandtab = true
 
 -- Autoindent
 opt.smartindent = true
+
+-- 24-bit truecolor
+opt.termguicolors = true
