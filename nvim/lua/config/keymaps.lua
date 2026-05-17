@@ -18,6 +18,7 @@ vim.keymap.set("n", "<c-k>", "<c-w>k", { desc = "Focus top split" })
 vim.keymap.set("n", "<c-l>", "<c-w>l", { desc = "Focus right split" })
 
 local telescope = require("telescope.builtin")
+vim.keymap.set("n", "<leader>T", "<cmd>Telescope<cr>", { desc = "Telescope" })
 vim.keymap.set("n", "<leader>ff", telescope.find_files, { desc = "Telescope find files" })
 vim.keymap.set("n", "<leader>fg", telescope.live_grep, { desc = "Telescope live grep" })
 vim.keymap.set("n", "<leader>fb", telescope.buffers, { desc = "Telescope buffers" })
