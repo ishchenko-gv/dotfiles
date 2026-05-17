@@ -79,13 +79,10 @@ ZSH_CUSTOM=~/.oh-my-zsh/custom
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-#  zsh-vi-mode
   zsh-autosuggestions
   zsh-syntax-highlighting
   fzf-zsh-plugin
   zsh-bat
-#  docker
-#  docker-compose
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -117,11 +114,11 @@ export LANG=en_US.UTF-8
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias ls="eza --icons --git --all"
-alias lst="eza --icons --git --git-ignore --oneline --all --tree --level=1"
 alias mv="mv -iv"
 alias rm="rm -v"
 alias cd="z"
 alias grep="ggrep"
+alias rm="trash"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

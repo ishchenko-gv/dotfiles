@@ -3,7 +3,7 @@ vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", { desc = "Toggle fil
 -- Buffers
 vim.keymap.set("n", "<tab>", "<cmd>bnext<cr>", { desc = "Go to next buffer" })
 vim.keymap.set("n", "<s-tab>", "<cmd>bprev<cr>", { desc = "Go to previous buffer" })
-vim.keymap.set("n", "<c-w>", "<cmd>bd<cr>", { desc = "Close current buffer" })
+vim.keymap.set("n", "<leader>bd", "<cmd>bd<cr>", { desc = "Close current buffer" })
 
 -- Split management and navigation
 -- :vs - create vertical split
@@ -16,6 +16,10 @@ vim.keymap.set("n", "<c-h>", "<c-w>h", { desc = "Focus left split" })
 vim.keymap.set("n", "<c-j>", "<c-w>j", { desc = "Focus bottom split" })
 vim.keymap.set("n", "<c-k>", "<c-w>k", { desc = "Focus top split" })
 vim.keymap.set("n", "<c-l>", "<c-w>l", { desc = "Focus right split" })
+vim.keymap.set("n", "<c-x>h", "<:vertical resize -10<cr>>", { silent = true, desc = "Reduce split width" })
+vim.keymap.set("n", "<c-x>l", "<:vertical resize +10<cr>>", { silent = true, desc = "Increase split width" })
+vim.keymap.set("n", "<c-x>j", "<:resize -10<cr>>", { silent = true, desc = "Reduce split height" })
+vim.keymap.set("n", "<c-x>k", "<:resize +10<cr>>", { silent = true, desc = "Increase split height" })
 
 local telescope = require("telescope.builtin")
 vim.keymap.set("n", "<leader>T", "<cmd>Telescope<cr>", { desc = "Telescope" })
