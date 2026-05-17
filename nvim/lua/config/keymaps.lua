@@ -1,7 +1,7 @@
 vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<cr>", { desc = "Toggle file tree" })
 
 -- Buffers
-vim.keymap.set("n", "<tab>", "<cmd>bnext<cr>", { decs = "Go to next buffer" })
+vim.keymap.set("n", "<tab>", "<cmd>bnext<cr>", { desc = "Go to next buffer" })
 vim.keymap.set("n", "<s-tab>", "<cmd>bprev<cr>", { desc = "Go to previous buffer" })
 vim.keymap.set("n", "<c-w>", "<cmd>bd<cr>", { desc = "Close current buffer" })
 
