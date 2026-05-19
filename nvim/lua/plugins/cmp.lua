@@ -51,14 +51,19 @@ return {
 			matching = { disallow_symbol_nonprefix_matching = false },
 		})
 
+		-- local config = require("config.lsp")
+		-- for server, serverConfig in pairs(config) do
+		-- 	vim.lsp.config(server, serverConfig)
+		-- end
+		--
 		-- Set up lspconfig.
-		local capabilities = require("cmp_nvim_lsp").default_capabilities()
-		local servers = { "gopls", "stylua" }
-		for _, s in ipairs(servers) do
-			vim.lsp.config(s, {
-				capabilities = capabilities,
-			})
-			vim.lsp.enable(s)
-		end
+		-- local capabilities = require("cmp_nvim_lsp").default_capabilities()
+		-- local servers = { "gopls", "stylua" }
+		-- for _, s in ipairs(servers) do
+		-- 	vim.lsp.config(s, {
+		-- 		capabilities = capabilities,
+		-- 	})
+		-- 	vim.lsp.enable(s)
+		-- end
 	end,
 }

@@ -33,3 +33,11 @@ vim.keymap.set("n", "<leader>gs", telescope.git_status, { desc = "Telescope git 
 -- LSP
 -- :nohlsearch - reset current highlighted search
 vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to definition" })
+vim.keymap.set("n", "<leader>ls", function()
+	local status = vim.lsp.status()
+	if status == "" then
+		vim.notify("Lsp status is empty", vim.log.levels.INFO)
+	else
+		vim.notify(status, vim.log.levels.INFO)
+	end
+end, { desc = "Lsp status" })

@@ -4,7 +4,6 @@ return {
 		opts = {},
 		dependencies = {
 			"mason-org/mason-lspconfig.nvim",
-			"neovim/nvim-lspconfig",
 		},
 	},
 }

@@ -23,3 +23,8 @@ opt.termguicolors = true
 
 -- Make search case insensitive
 opt.ignorecase = true
+
+-- Show diagnostic only in normal mode
+vim.diagnostic.config({
+	update_in_insert = false,
+})
